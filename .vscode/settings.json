@@ -1,0 +1,6 @@
+{
+  "files.insertFinalNewline": true,
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
