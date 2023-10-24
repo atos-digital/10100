@@ -4,17 +4,14 @@
  * By Hakim El Hattab, http://hakim.se
  */
 
-
 // Default mixins and settings -----------------
 @import "../template/mixins";
 @import "../template/settings";
 // ---------------------------------------------
 
-
 // Include theme-specific fonts
 @import url(./fonts/source-sans-pro/source-sans-pro.css);
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
 
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #fff;
@@ -22,25 +19,24 @@ $backgroundColor: #fff;
 $mainColor: #191919;
 $headingColor: #191919;
 
-$mainFontSize: 42px;
-$mainFont: 'Raleway', sans-serif;
-$headingFont: 'Raleway', sans-serif;
+$mainFontSize: 32px;
+$mainFont: "Raleway", sans-serif;
+$headingFont: "Source Sans Pro", Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
 $headingFontWeight: 600;
 $linkColor: #42affa;
-$linkColorHover: lighten( $linkColor, 15% );
-$selectionBackgroundColor: rgba( $linkColor, 0.75 );
+$linkColorHover: lighten($linkColor, 15%);
+$selectionBackgroundColor: rgba($linkColor, 0.75);
 
 $heading1Size: 2.5em;
-$heading2Size: 1em;
-$heading3Size: 0.6em;
-$heading4Size: 0.4em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
 
 // Change text colors against light slide backgrounds
 @include light-bg-text-color(#222);
-
 
 // Theme template ------------------------------
 @import "../template/theme";
