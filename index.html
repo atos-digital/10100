@@ -52,6 +52,11 @@
           videos.forEach(function (video) {
             video.pause();
           });
+
+          var currentSlideVideo = event.currentSlide.querySelector('video');
+          if (currentSlideVideo) {
+            currentSlideVideo.play();
+          }
         });
       </script>
 </body>
