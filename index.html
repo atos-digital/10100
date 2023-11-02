@@ -1,89 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
 
-    <title>Ten-ten-zero-apps</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <link rel="stylesheet" href="dist/reset.css" />
-    <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/custom.css" />
+  <title>Ten-ten-zero-apps</title>
 
-    <!-- Theme used for syntax highlighted code -->
-    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section
-          data-background-video="./assets/matrix.mp4"
-          data-background-video-loop
-          data-background-video-muted
-          data-autoanimate=""
-        >
-          <h2>10.10.0 Apps</h2>
-        </section>
-        <section
-          data-background-video="./assets/10weeks.mp4"
-          data-background-video-loop
-          data-background-video-muted
-          id="10weeks"
-        ></section>
+  <link rel="stylesheet" href="dist/reset.css" />
+  <link rel="stylesheet" href="dist/reveal.css" />
+  <link rel="stylesheet" href="dist/theme/custom.css" />
 
-        <section data-auto-animate>
-          <ul>
-            <li>10 Weeks to Go-Live</li>
-            <li>10 Years Evergreen</li>
-            <li>0 Operations</li>
-          </ul>
-        </section>
-        <!-- 10 weeks to go live  -->
-        <section data-auto-animate>
-          <ul>
-            <li style="color: dodgerblue;">10 Weeks to Go-Live</li>
-              Full-stack ways of working dramatically reduce feature time to live
-            <li style="display:none">10 Years Evergreen</li>
-            <li style="display:none">0 Operations</li>
-          </ul>
-        </section>
-        <!-- 10 weeks Evergreen  -->
-          <section data-auto-animate>
-            <ul>
-              <li style="display:none">10 Weeks to Go-Live</li>
-              <li style="color: dodgerblue;">10 Years Evergreen</li>
-              Evergreen apps are always up to date, and never need to be
-              rewritten
-              <li style="display:none">0 Operations</li>
-            </ul>
-          </section>
-        <!-- 0 ops -->
-          <section data-auto-animate>
-            <ul>
-              <li style="display:none">10 Weeks to Go-Live</li>
-              <li style="display: none"">10 Years Evergreen</li>
-              <li style="color: dodgerblue">0 Operations</li>
-              Say goodbye to regular patching and unexpected downtime, and say hello to uninterrupted service.
-            </ul>
-          </section>
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+</head>
 
-    <script src="dist/reveal.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
-    <script>
-      // More info about initialization & config:
-      // - https://revealjs.com/initialization/
-      // - https://revealjs.com/config/
-      Reveal.initialize({
-        hash: true,
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section id="10-10-0">
+        <video src="./assets/10-10-0 - Intro.mp4" autoplay loop muted
+          style="width: 100%; height: 100%; object-fit: cover;"></video>
+      </section>
+      <section id="10weeks">
+        <video src="./assets/10WeeksToBuild.mp4" autoplay loop style="width: 100%; height: 100%; object-fit: cover;">
+        </video>
+      </section>
+      <section id="10YearsEvergeen">
+        <video src="./assets/10YearsEvergreen.mp4" autoplay loop style="width: 100%; height: 100%; object-fit: cover;">
+        </video>
+      </section>
+      <section>
+        <video src="./assets/0Ops.mp4" autoplay loop style="width: 100%; height: 100%; object-fit: cover;"></video>
+      </section>
+      <script src="dist/reveal.js"></script>
+      <script src="plugin/notes/notes.js"></script>
+      <script src="plugin/markdown/markdown.js"></script>
+      <script src="plugin/highlight/highlight.js"></script>
+      <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+          hash: true,
 
-        // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-      });
-    </script>
-  </body>
+          // Learn about plugins: https://revealjs.com/plugins/
+          plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+        });
+      </script>
+</body>
+
 </html>
