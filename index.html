@@ -18,19 +18,19 @@
 <body>
   <div class="reveal">
     <div class="slides">
-      <section id="10-10-0">
-        <video src="./assets/10-10-0 - Intro.mp4" autoplay loop muted
+      <section id="10-10-0" data-autoslide="16000">
+        <video src="./assets/10-10-0 - Intro.mp4" autoplay loop muted 
           style="width: 100%; height: 100%; object-fit: cover;"></video>
       </section>
-      <section id="10weeks">
+      <section id="10weeks" data-autoslide="61800">
         <video src="./assets/10WeeksToBuild.mp4" autoplay loop style="width: 100%; height: 100%; object-fit: cover;">
         </video>
       </section>
-      <section id="10YearsEvergeen">
+      <section id="10YearsEvergeen" data-autoslide="70800">
         <video src="./assets/10YearsEvergreen.mp4" autoplay loop style="width: 100%; height: 100%; object-fit: cover;">
         </video>
       </section>
-      <section id="0-ops">
+      <section id="0-ops" data-autoslide="53000">
         <video src="./assets/0Ops.mp4" autoplay loop style="width: 100%; height: 100%; object-fit: cover;"></video>
       </section>
       <script src="dist/reveal.js"></script>
@@ -38,13 +38,8 @@
       <script src="plugin/markdown/markdown.js"></script>
       <script src="plugin/highlight/highlight.js"></script>
       <script>
-        // More info about initialization & config:
-        // - https://revealjs.com/initialization/
-        // - https://revealjs.com/config/
         Reveal.initialize({
           hash: true,
-
-          // Learn about plugins: https://revealjs.com/plugins/
           plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
         });
         Reveal.on('slidechanged', function (event) {
