@@ -1,65 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Ten-ten-zero-apps</title>
 
-  <title>Ten-ten-zero-apps</title>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/custom.css" />
 
-  <link rel="stylesheet" href="dist/reset.css" />
-  <link rel="stylesheet" href="dist/reveal.css" />
-  <link rel="stylesheet" href="dist/theme/custom.css" />
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
 
-  <!-- Theme used for syntax highlighted code -->
-  <link rel="stylesheet" href="plugin/highlight/monokai.css" />
-</head>
-
-<body>
-  <div class="reveal">
-    <div class="slides">
-      <section id="title">
-        <image src="./assets/title.png" style="width: 100%; height: 100%; object-fit: cover;"></image>
-      </section>
-      <section id="intro">
-        <section>
-          <video src="./assets/intro.mp4" muted style="width: 100%; height: 100%; object-fit: cover;"></video>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section id="title">
+          <image
+            src="./assets/title.png"
+            style="width: 100%; height: 100%; object-fit: cover"
+          ></image>
         </section>
-        <section>
-          <video src="./assets/intro_talk.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
+        <section id="intro">
+          <section>
+            <video
+              src="./assets/intro.mp4"
+              muted
+              style="width: 100%; height: 100%; object-fit: cover"
+            ></video>
+          </section>
+          <section>
+            <video
+              src="./assets/intro_talk.mp4"
+              style="width: 100%; height: 100%; object-fit: cover"
+            ></video>
+          </section>
         </section>
-      </section>
-      <section id="10weeks">
-        <video src="./assets/10WeeksToBuild.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
-      </section>
-      <section id="10YearsEvergeen">
-        <video src="./assets/10YearsEvergreen.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
-      </section>
-      <section id="0-ops">
-        <video src="./assets/0Ops.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
-      </section>
-      <script src="dist/reveal.js"></script>
-      <script src="plugin/notes/notes.js"></script>
-      <script src="plugin/markdown/markdown.js"></script>
-      <script src="plugin/highlight/highlight.js"></script>
-      <script>
-        Reveal.initialize({
-          hash: true,
-          plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-          autoPlayMedia: true
-        });
-        Reveal.on('slidechanged', function (event) {
-          var videos = document.querySelectorAll('video');
-          videos.forEach(function (video) {
-            video.pause();
+        <section id="10weeks">
+          <video
+            src="./assets/10WeeksToBuild.mp4"
+            style="width: 100%; height: 100%; object-fit: cover"
+          ></video>
+        </section>
+        <section id="10YearsEvergeen">
+          <video
+            src="./assets/10YearsEvergreen.mp4"
+            style="width: 100%; height: 100%; object-fit: cover"
+          ></video>
+        </section>
+        <section id="0-ops">
+          <video
+            src="./assets/0Ops.mp4"
+            style="width: 100%; height: 100%; object-fit: cover"
+          ></video>
+        </section>
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+        <script>
+          Reveal.initialize({
+            hash: true,
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+            autoPlayMedia: true,
           });
-
-          var currentSlideVideo = event.currentSlide.querySelector('video');
-          if (currentSlideVideo) {
-            currentSlideVideo.play();
-          }
-        });
-      </script>
-</body>
-
+        </script>
+      </div>
+    </div>
+  </body>
 </html>
